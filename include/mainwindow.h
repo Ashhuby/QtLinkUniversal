@@ -18,6 +18,7 @@ public:
 private slots:
     void handleSend();
     void readSerial();
+    void refreshPorts();
 
 private:
     Ui::MainWindow *ui;
