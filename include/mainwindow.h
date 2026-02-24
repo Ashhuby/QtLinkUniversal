@@ -9,19 +9,20 @@ namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow {
-    Q_OBJECT
+    Q_OBJECT // This must stay in the header file
 
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
-    void handleSend();
-    void readSerial();
-    void refreshPorts();
+    void on_refreshBtn_clicked();
+    void on_connectBtn_clicked();
+    void readData();
 
 private:
     Ui::MainWindow *ui;
     QSerialPort *serial;
 };
+
 #endif
