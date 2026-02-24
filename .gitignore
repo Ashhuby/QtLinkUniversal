@@ -1,0 +1,12 @@
+# Build directories
+build/
+bin/
+
+# IDE specific
+.vscode/
+*.user
+
+# Generated Qt Files (Crucial for Git)
+ui_*.h
+moc_*.cpp
+qrc_*.cpp
